@@ -11,7 +11,6 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"classpath:springmvc.xml"});
-
         context.start();
         DemoService demoService = (DemoService) context.getBean("demoService");
 
